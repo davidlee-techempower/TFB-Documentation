@@ -75,7 +75,7 @@ or call the other test with `tfb --mode verify --test compojure-raw`.
   * `update_url (optional):` the URI to the updates test, setup in a manner similar to `query_url` described above.
   * `plaintext_url (optional):` the URI of the plaintext test, typically `/plaintext`
   * `port (optional):` The port the server will be listening on, typically `8080`
-  * `approach (metadata):` `Realistic` or `Stripped` (see [here](http://www.techempower.com/benchmarks/#section=code&hw=peak&test=json) for a description of all metadata attributes)
+  * `approach (metadata):` `Realistic` or `Stripped`
   * `classification (metadata):` `Fullstack`, `Micro`, or `Platform`
   * `database (metadata):` `MySQL`, `Postgres`, `MongoDB`, `Cassandra`, `Elasticsearch`, `Redis`, `SQLite`, `SQLServer`, or `None`
   * `framework (metadata):` name of the framework (only used to display information on the results site)
@@ -88,7 +88,7 @@ or call the other test with `tfb --mode verify --test compojure-raw`.
   * `display_name (metadata):` How to render this test permutation's name on the results web site.  Some permutation names can be really long, so the display_name is provided in order to provide something more succinct.
   * `versus (optional):` The name of another test (elsewhere in this project) that is a subset of this framework.  This allows for the generation of the framework efficiency chart in the results web site. For example, Compojure is compared to "servlet" since Compojure is built on the Servlets platform.
 
-The [requirements section](../Project-Information/Framework-Tests#requirements) explains the expected response for each URL as well all metadata options available. 
+The [requirements section](/Project-Information/Framework-Tests#requirements) explains the expected response for each URL as well all metadata options available. 
 
 # Test Docker File
 
