@@ -25,11 +25,11 @@ request will be verifed as normal.
 different concepts and frameworks, and it can really help to read the documentation and 
 READMEs, such as this one, the ones inside specific language directories, and the
 ones inside specific framework directories.
-* __Use the Development Virtual Machine__: Our Vagrant scripts can set up a VM for you
-that looks nearly identical to our test environment. This is even better than relying
-on the Travis-CI verification, and you are strongly encouraged to use this. See 
-the [installation guide](Installation-Guide#quick-start-guide-vagrant) 
-for specifics.
+* __Use Docker__: We recommend that you use Docker instead of a
+virtual machine. This is even better than relying on the Travis-CI verification, 
+and you are strongly encouraged to use this. See the 
+[installation guide](Installation-Guide) for specifics. Our [Vagrant scripts](Installation-Guide#quick-start-guide-vagrant) can set up a VM for you
+if Docker is not an option.
 
 # Github Pull Request Procedure
 
