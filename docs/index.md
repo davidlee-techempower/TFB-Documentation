@@ -24,5 +24,4 @@ The major sections of the documentation are:
 [Codebase](Codebase/)                      | See how the framework benchmarks are structured and understand the purpose of the files.
 [Support](Support/)                        | Get more help via FAQs or by getting in touch with the community. 
 
-_Note: There are READMEs pertaining to specific test implementations that exist outside of this documentation. Each of those READMEs is located within the main project's directory structure, such as within the directories for specific languages, frameworks, and 
-[deployment script](Codebase/Summary-of-Script-Directories) directories._
+_Note: There are READMEs pertaining to specific test implementations that exist outside of this documentation. Each of those READMEs is located within the main project's [directory structure](Codebase/), such as within the directories for specific languages, frameworks, and deployment script directories._

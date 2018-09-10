@@ -29,19 +29,14 @@ Here are the relevant pieces of TFB's file structure:
     * [scaffolding/](#scaffolding)
     * [travis/](#travis)
     * [utils/](#utils)
-    * [wrk/](#wrk)
+    * wrk/
 * [.travis.yml](#travisyml)
-* [benchmark.cgf(.example)](#benchmarkcfg)
-
-
 
 ### deployment/
 
 Information for deploying the benchmark on a range of cloud or 
 self-hosted environments. While you can always use manual deployment, 
-automated scripts exist for many scenarios. Explinations of the 
-subdirectories are within 
-[Summary of Script Directories section](Summary-of-Script-Directories).
+automated scripts exist for many scenarios.
 
 ### frameworks/
 
@@ -155,5 +150,4 @@ Provides Travis-CI with the relevant information to test TFB. See the
 
 | Page | Summary |
 |:---- |:------- |
-[Configuration File](Configuration-File) | Configures set up specifications specific to each user and system.
 [Framework Specific Files](Framework-Files) | Files specific to each individual framework for use with the benchmarking suite.

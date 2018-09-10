@@ -56,9 +56,8 @@ permutation to your `benchmark_config.json` file for the Windows test.  When
 the benchmark script runs on Linux, it skips tests where `os` is 
 `Windows` and vice versa.
 * Add the necessary tweaks to your 
-[setup file](../Codebase/Framework-Files#setup-file) to start and stop on 
-the new operating system.  See, for example, 
-[the script for HttpListener](https://github.com/TechEmpower/FrameworkBenchmarks/blob/master/frameworks/CSharp/HttpListener/setup.ps1).
+[setup file](/Codebase/Framework-Files) to start and stop on 
+the new operating system.
 * Test on Windows and Linux to make sure everything works as expected.
 
 # Travis-CI

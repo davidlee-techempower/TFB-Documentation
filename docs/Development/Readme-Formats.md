@@ -49,4 +49,4 @@ well.
     * Resources
     * Experts in {framework} available to contact
     
-__Example:__: [Java/revenj](https://github.com/TechEmpower/FrameworkBenchmarks/tree/master/frameworks/Java/revenj)
+__Example:__: [Java/gemini](https://github.com/TechEmpower/FrameworkBenchmarks/tree/master/frameworks/Java/gemini)

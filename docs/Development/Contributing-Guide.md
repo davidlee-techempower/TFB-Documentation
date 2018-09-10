@@ -28,7 +28,7 @@ ones inside specific framework directories.
 * __Use the Development Virtual Machine__: Our Vagrant scripts can set up a VM for you
 that looks nearly identical to our test environment. This is even better than relying
 on the Travis-CI verification, and you are strongly encouraged to use this. See 
-the [installation guide](Installation-Guide#vagrant-development-environment) 
+the [installation guide](Installation-Guide#quick-start-guide-vagrant) 
 for specifics.
 
 # Github Pull Request Procedure

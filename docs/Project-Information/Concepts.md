@@ -33,7 +33,7 @@ When run, `TFB` will:
 * Install the necessary software (both on the `app server` and other servers)
 * Launch the framework(s) you've requested, each in turn
 * Launch the necessary database servers
-* Access the URIs listed in [the requirements](http://www.techempower.com/benchmarks/#section=code) and verify the responses
+* Access the URIs listed in [the requirements](/Project-Information/Framework-Tests) and verify the responses
 * Launch the load generation software on the `load server`
 * Gather the results
 * Halt the framework, and repeat for the next framework as specified by command-line arguments
