@@ -11,11 +11,13 @@ For language and framework specific details, view their README within their resp
   
   * Switched 10-gigabit ethernet
 
-  ##### All 3 machines: tfb-server, tfb-database, tfb-client
+#### All 3 machines: tfb-server, tfb-database, tfb-client
   
   * 28 HT Cores Intel(R) Xeon(R) Gold 5120 CPU @ 2.20GHz
   * 32GB RAM
   
+_Note: Hardware details used for the various rounds can be found on the [results website](https://www.techempower.com/benchmarks/#section=environment&hw=ph&test=fortune)_
+
 ##Operating Systems
 * [Ubuntu Linux](http://www.ubuntu.com/desktop) 16.04 64-bit
 
