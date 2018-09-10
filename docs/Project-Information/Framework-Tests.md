@@ -8,11 +8,11 @@ Each test type has their own requirements and specifications. Visit their sectio
 
 1. [__JSON Serialization__](#json-serialization): Exercises the framework fundamentals including keep-alive support, request routing, request header parsing, object instantiation, JSON serialization, response header generation, and request count throughput.
 2. [__Single Database Query__](#single-database-query): Exercises the framework's object-relational mapper (ORM), random number generator, database driver, and database connection pool.
-3. [__Multiple Database Queries__](#multiple-database-queries): A variation of [Test #2](#Single-Database-Query) and also uses the __World__ table. Multiple rows are fetched to more dramatically punish the database driver and connection pool. At the highest queries-per-request tested (20), this test demonstrates all frameworks' convergence toward zero requests-per-second as database activity increases.
+3. [__Multiple Database Queries__](#multiple-database-queries): A variation of [Test #2](#single-database-query) and also uses the __World__ table. Multiple rows are fetched to more dramatically punish the database driver and connection pool. At the highest queries-per-request tested (20), this test demonstrates all frameworks' convergence toward zero requests-per-second as database activity increases.
 4. [__Fortunes__](#fortunes): Exercises the ORM, database connectivity, dynamic-size collections, sorting, server-side templates, XSS countermeasures, and character encoding.
 5. [__Database Updates__](#database-updates): A variation of [Test #3](#multiple-database-queries) that exercises the ORM's persistence of objects and the database driver's performance at running `UPDATE` statements or similar. The spirit of this test is to exercise a variable number of read-then-write style database operations.
 6. [__Plaintext__](#plaintext): An exercise of the request-routing fundamentals only, designed to demonstrate the capacity of high-performance platforms in particular. Requests will be sent using HTTP pipelining. The response payload is still small, meaning good performance is still necessary in order to saturate the gigabit Ethernet of the test environment.
-7. [__Caching__](#caching): Exercises the platform or framework's in-memory caching of information sourced from a database.  For implementation simplicity, the requirements are very similar to the multiple database query test ([Test #3](#multiple-database-queries)), but use a separate database table and are fairly generous/forgiving, allowing for each platform or framework's best practices to be applied.
+7. [__Caching__](#caching-work-in-progress): Exercises the platform or framework's in-memory caching of information sourced from a database.  For implementation simplicity, the requirements are very similar to the multiple database query test ([Test #3](#multiple-database-queries)), but use a separate database table and are fairly generous/forgiving, allowing for each platform or framework's best practices to be applied.
 
 #General Test Requirements
 
@@ -43,7 +43,7 @@ The following requirements apply to all test types below.
     9. gzip compression is not permitted.
     10. Server support for HTTP Keep-Alive is strongly encouraged but not required.
     11. If HTTP Keep-Alive is enabled, no maximum Keep-Alive timeout is specified by   this test.
-    12. The request handler will be exercised at concurrency levels ranging from 8 to 256.
+    12. The request handler will be exercised at concurrency levels ranging from 16 to 512.
     13. The request handler will be exercised using GET requests.
 
     ###Example request
@@ -90,7 +90,7 @@ The following requirements apply to all test types below.
     14. gzip compression is not permitted.
     15. Server support for HTTP Keep-Alive is strongly encouraged but not required.
     16. If HTTP Keep-Alive is enabled, no maximum Keep-Alive timeout is specified by this test.
-    17. The request handler will be exercised at concurrency levels ranging from 8 to 256.
+    17. The request handler will be exercised at concurrency levels ranging from 16 to 512.
     18. The request handler will be exercised using GET requests.
 
     ###Example request
@@ -186,7 +186,7 @@ The following requirements apply to all test types below.
     15. Be aware that at least one of the `message` text fields includes a `<script>` tag.
     16. The server-side template must assume the `message` text cannot be trusted and must escape the message text properly.
     17. The implementation is encouraged to use best practices for templates such as layout inheritence, separate header and footer files, and so on. However, this is not required. We request that implementations do not manage assets (JavaScript, CSS, images). We are deferring asset management until we can craft a more suitable test.
-    18. The response content type must be set to `text/html`.
+    18. The response content type must be set to `text/html; charset=utf-8`.
     19. The response headers must include either `Content-Length` or `Transfer-Encoding`.
     20. The response headers must include `Server` and `Date`.
     21. Use of an in-memory cache of Fortune objects or rows by the application is not permitted.
@@ -194,7 +194,7 @@ The following requirements apply to all test types below.
     23. gzip compression is not permitted.
     24. Server support for HTTP Keep-Alive is strongly encouraged but not required.
     25. If HTTP Keep-Alive is enabled, no maximum Keep-Alive timeout is specified by this test.
-    26. The request handler will be exercised at concurrency levels ranging from 8 to 256.
+    26. The request handler will be exercised at concurrency levels ranging from 16 to 512.
     27. The request handler will be exercised using GET requests.
 
     ###Example request
